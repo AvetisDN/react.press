@@ -8235,7 +8235,7 @@
 			} );
 
 			// Handle locking in response to changeset save errors.
-			api.bind( 'error', function( response ) {
+			api.bind( 'error', function(response ) {
 				if ( 'changeset_locked' === response.code && response.lock_user ) {
 					startLock( {
 						lockUser: response.lock_user
